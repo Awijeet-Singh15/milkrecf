@@ -49,7 +49,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       setMessageType("success");
       setMessage("Login successful! 🐄 Redirecting...");
-      setTimeout(() => {
+       setTimeout(() => {
         navigate("/dashboard");
       }, 1000);
     } catch (err) {
